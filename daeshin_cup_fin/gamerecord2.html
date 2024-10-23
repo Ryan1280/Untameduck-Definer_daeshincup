@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	
+  	<link rel="stylesheet" href="global/gamerecord.css" />
+  	<link rel="stylesheet"  href="css/gamerecord2.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="gamerecord-2">
+    		<img class="mainlogo-small-1-icon" alt="" src="image/mainlogo_small 1.png">
+    		
+    		<div class="div">대진표</div>
+    		<div class="div1">경기 결과</div>
+    		<div class="div2">팀 소개</div>
+    		<img class="middle-component-icon" alt="" src="image/middle component.png">
+    		
+    		<div class="div3">1차 경기 결과</div>
+    		<b class="b">2차 경기 결과</b>
+    		<div class="div4">3차 경기 결과</div>
+    		<div class="div5">결승</div>
+    		<div class="gamerecord-2-child">
+    		</div>
+    		<div class="rectangle-parent">
+      			<div class="group-child">
+      			</div>
+      			<div class="group-wrapper">
+        				<div class="group-container">
+          					<div class="group-container">
+            						<div class="group-item">
+            						</div>
+            						<div class="div6">영상 썸네일</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="div7">2024-10-22</div>
+      			<div class="div8">0 - 0</div>
+      			<div class="parent">
+        				<div class="div9">0-0</div>
+        				<div class="div10">0-0</div>
+      			</div>
+      			<div class="div11">경기로그</div>
+    		</div>
+  	</div>
+  	<script>
+		// 대진표 클릭 시 list.html로 이동
+		var matchSchedule = document.querySelector(".div");
+		if(matchSchedule) {
+			matchSchedule.addEventListener("click", function() {
+				window.location.href = "list.html";
+			});
+		}
+	
+		// 경기 결과 클릭 시 gamerecord.html로 이동
+		var gameResult = document.querySelector(".div1");
+		if(gameResult) {
+			gameResult.addEventListener("click", function() {
+				window.location.href = "gamerecord.html";
+			});
+		}
+	
+		// 팀 소개 클릭 시 team.html로 이동
+		var teamIntro = document.querySelector(".div2");
+		if(teamIntro) {
+			teamIntro.addEventListener("click", function() {
+				window.location.href = "team.html";
+			});
+		}
+	
+		// 1차 경기 결과 클릭 시 gamerecord.html로 이동
+		var firstMatchResult = document.querySelector(".div3");
+		if(firstMatchResult) {
+			firstMatchResult.addEventListener("click", function() {
+				window.location.href = "gamerecord.html";
+			});
+		}
+	
+		// 2차 경기 결과 클릭 시 gamerecord2.html로 이동
+		var secondMatchResult = document.querySelector(".div4");
+		if(secondMatchResult) {
+			secondMatchResult.addEventListener("click", function() {
+				window.location.href = "gamerecord2.html";
+			});
+		}
+	
+		// 3차 경기 결과 클릭 시 gamerecord3.html로 이동
+		var thirdMatchResult = document.querySelector(".div5");
+		if(thirdMatchResult) {
+			thirdMatchResult.addEventListener("click", function() {
+				window.location.href = "gamerecord3.html";
+			});
+		}
+	
+		// 결승 클릭 시 gamerecord4.html로 이동
+		var finalMatchResult = document.querySelector(".b");
+		if(finalMatchResult) {
+			finalMatchResult.addEventListener("click", function() {
+				window.location.href = "gamerecord4.html";
+			});
+		}
+            // mainlogo_small 클릭 시 mainpage.html로 이동
+		var mainLogo = document.querySelector(".mainlogo-small-1-icon");
+		if(mainLogo) {
+		mainLogo.addEventListener("click", function() {
+			window.location.href = "mainpage.html";
+			});
+		}		
+	</script>
+	
+  	
+  	
+  	
+</body>
+</html>

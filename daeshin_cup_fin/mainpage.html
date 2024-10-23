@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	
+  	<link rel="stylesheet" href="global/mainpage.css" />
+  	<link rel="stylesheet"  href="css/mainpage.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="mainpage">
+    		<img class="background-1-icon" alt="" src="image/background 1.png">
+    		
+    		<img class="mainlogo-small-1-icon" alt="" src="image/mainlogo_small 1.png">
+    		
+    		<div class="div" id="text">대진표</div>
+    		<div class="div1" id="text1">경기 결과</div>
+    		<div class="div2" id="text2">팀 소개</div>
+    		<div class="middle-component">
+      			<img class="mainlogo-1-icon" alt="" src="image/mainlogo 1.png">
+      			
+      			<div class="warning" id="warningContainer">
+        				<div class="warning-child">
+        				</div>
+      			</div>
+      			<b class="b">주의 사항</b>
+      			<img class="rule-sign-icon" alt="" src="image/rule_sign.png">
+      			
+    		</div>
+    		<b class="x-ssam">대전대신고등학교 x SSAM</b>
+  	</div>
+  	
+  	
+  	
+  	
+      <script>
+        var text = document.getElementById("text");
+        if(text) {
+            text.addEventListener("click", function (e) {
+                window.location.href = "list.html";
+            });
+        }
+        
+        var text1 = document.getElementById("text1");
+        if(text1) {
+            text1.addEventListener("click", function (e) {
+                window.location.href = "gamerecord.html";
+            });
+        }
+        
+        var text2 = document.getElementById("text2");
+        if(text2) {
+            text2.addEventListener("click", function (e) {
+                window.location.href = "team.html";
+            });
+        }
+        
+        var warningContainer = document.getElementById("warningContainer");
+        if(warningContainer) {
+            warningContainer.addEventListener("click", function (e) {
+                window.location.href = "warning.html";
+            });
+        }
+    </script>
+    </body>
+</html>
